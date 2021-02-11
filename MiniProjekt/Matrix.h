@@ -703,15 +703,11 @@ Matrix<T>::Matrix(Matrix<T>&& otherMatrix) {
 }
 
 
-//metoda zmieniona na potrzebe modyfikacji podczas laboratoriow
 template <typename T>
-bool Matrix<T>::commaValidator(string& number) { //w ramach projektu ta metoda zamienia³a , na . w liczbach dziesietnych
+bool Matrix<T>::commaValidator(string& number) {
 	for (int i = 0; i < number.length(); i++) {
-		if (number[i] == '^') { // wczesniej w ramach projektu bylo number[i] == ','
+		if (number[i] == ',') {
 			number[i] = '.';
-		}
-		else if (number[i] == '.' || number[i] == ',') {
-			return false;
 		}
 		char c = number[i];
 		if (!(std::isspace(c) || std::isdigit(c) || c == '.'))
@@ -719,4 +715,5 @@ bool Matrix<T>::commaValidator(string& number) { //w ramach projektu ta metoda z
 	}
 	return true;
 }
+
 
