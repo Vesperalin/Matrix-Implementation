@@ -1,0 +1,9 @@
+const int NO_ERRORS = 0;
+const int INCORRECT_MARTIX_SIZE_GIVEN_MATRIX_NOT_CREATED = 1; // w wypadku gdy podanie zlego argumentu spowodowalo nie powstanie macierzy
+const int INCORRECT_MARTIX_SIZE_GIVEN_MATRIX_EXISTS = 2; //podanie zlego argumentu nie zmienilo matrixa w nieuzyteczny
+const int INVALID_MATRIX_WAS_GIVEN_MATRIX_NOT_CREATED = 3;
+const int INCORRECT_MATRIX_SIZE_GIVEN_MATRIX_NOT_CHANGED = 4;
+const int CAN_NOT_OPEN_FILE_MATRIX_NOT_CREATED = 5;
+const int INVALID_ARGUMENT_IN_FILE = 6;
+const int GIVEN_MATRIX_DOES_NOT_EXIST = 7;
+const int INCORRECT_MARTIX_SIZE_GIVEN = 8;
